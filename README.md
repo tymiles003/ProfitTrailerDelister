@@ -1,6 +1,7 @@
 # Delister for ProfitTrailer - Bittrex #
+Detect automatically markets, which are going to be delisted and set them automatically in Sell Only Mode and Panic Sell Mode.
 ## Warning ##
-This will only use for Bittrex.
+This will only work for Bittrex.
 Use it on your own risk. Delister can and WILL cause profit loss.
 
 ## Prerequisits
