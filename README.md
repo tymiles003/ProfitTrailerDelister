@@ -18,3 +18,10 @@ Use it on your own risk. Delister can and WILL cause profit loss.
 4. Configure config.json. Enter path to ProfitTrailer and update interval in seconds
 5. __pm2 start pm2-DelisterStart.json__
 6. (optional) If you don't want to use pm2, use __node Delister.js__ instead
+
+## Donations ##
+Donations are welcome.
+
+BTC: 1Wed1w9PmR1w6tE5C8gBgcPVoREyPj5GW
+ETH: 0x129A5539bf4Dd22329835dF9FDdE2c72548F7fF2
+XEM: NBTSOZDPC3WB27OQK4KVX2FBXVBTME6LHNI3YBMH
