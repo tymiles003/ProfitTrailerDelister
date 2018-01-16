@@ -2,7 +2,10 @@
 Detect automatically markets, which are going to be delisted and set them automatically in Sell Only Mode and Panic Sell Mode.
 ## Warning ##
 This will only work for Bittrex.
-Use it on your own risk. Delister can and WILL cause profit loss.
+
+Use it on your own risk. 
+
+__Delister can and WILL cause profit loss.__
 
 ## Prerequisits
 1. Linux
