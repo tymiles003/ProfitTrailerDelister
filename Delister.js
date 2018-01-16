@@ -2,7 +2,7 @@ const config = require("./config.json");
 const fs = require("fs");
 const request = require("request");
 const url = "https://bittrex.com/api/v1.1/public/getmarkets";
-const delimiter = "### Created by delister, do not delete this line and let it at the end ###";
+const delimiter = "### Created by delister, do not delete these lines and let them at the end ###";
 const pairsConfigurationFile = config["profitTrailerPath"] + "/trading/PAIRS.properties";
 
 if (!fs.existsSync(pairsConfigurationFile)) {
