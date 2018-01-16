@@ -12,10 +12,6 @@ if (!fs.existsSync(pairsConfigurationFile)) {
 }
 
 var pairsConfiguration = fs.readFileSync(pairsConfigurationFile, "utf8");
-
-if (pairsConfiguration.indexOf(delimiter) === -1) {
-	fs.appendFileSync(pairsConfigurationFile, "\n\n" + delimiter);
-}
 const market = pairsConfiguration.split("MARKET = ")[1].split("\n")[0].trim();
 
 getData()
@@ -34,6 +30,11 @@ function getData() {
 }
 
 function processPanicSells(json) {
+
+	if (pairsConfiguration.indexOf(delimiter) === -1) {
+		fs.appendFileSync(pairsConfigurationFile, "\n\n" + delimiter);
+	}
+
 	json["result"].forEach(function(currency) {
 		if (currency["Notice"] != null && currency["Notice"].indexOf("market is being delisted on") !== -1 && currency["BaseCurrency"] == market) {
 			const baseCurrency = currency["BaseCurrency"];
